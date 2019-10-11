@@ -46,13 +46,25 @@ const createTable = async () => {
           AttributeType: 'S',
         },
         {
+          AttributeName: 'gsi1sk',
+          AttributeType: 'S',
+        },
+        {
           AttributeName: 'gsi2pk',
+          AttributeType: 'S',
+        },
+        {
+          AttributeName: 'gsi2sk',
           AttributeType: 'S',
         },
         {
           AttributeName: 'gsi3pk',
           AttributeType: 'S',
         },
+        // {
+        //   AttributeName: 'gsi3sk',
+        //   AttributeType: 'S',
+        // },
       ],
       GlobalSecondaryIndexes: [
         {
@@ -63,7 +75,7 @@ const createTable = async () => {
               KeyType: 'HASH',
             },
             {
-              AttributeName: 'pk',
+              AttributeName: 'gsi1sk',
               KeyType: 'RANGE',
             },
           ],
@@ -83,7 +95,7 @@ const createTable = async () => {
               KeyType: 'HASH',
             },
             {
-              AttributeName: 'pk',
+              AttributeName: 'gsi2sk',
               KeyType: 'RANGE',
             },
           ],

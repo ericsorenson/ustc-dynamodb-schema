@@ -29,12 +29,30 @@ const cases = [
     pk: '101-19',
     sk: 'case|new',
   },
+  {
+    Item: {
+      attributes: 'Case: 102-19',
+    },
+    gsi1pk: 'eric@example.com',
+    gsi1sk: 'case',
+    pk: '102-19',
+    sk: 'case|new',
+  },
+  {
+    Item: {
+      attributes: 'Case: 103-19',
+    },
+    gsi1pk: 'kris@example.com',
+    gsi1sk: 'case',
+    pk: '103-19',
+    sk: 'case|new',
+  },
 ];
 
 const workItems = [
   {
     Item: {
-      attributes: 'WorkItem: 12345',
+      attributes: 'WorkItem: 123456',
     },
     gsi1pk: 'eric@example.com',
     gsi1sk: 'workItem|open|123456',
@@ -42,7 +60,20 @@ const workItems = [
     gsi2sk: 'workItem|open|123456',
     gsi3pk: '101-19',
     gsi3sk: 'workItem|open|123456',
-    pk: '12345',
+    pk: '123456',
+    sk: 'workItem|open',
+  },
+  {
+    Item: {
+      attributes: 'WorkItem: 654321',
+    },
+    gsi1pk: 'kris@example.com',
+    gsi1sk: 'workItem|open|654321',
+    gsi2pk: 'docketclerk',
+    gsi2sk: 'workItem|open|654321',
+    gsi3pk: '101-19',
+    gsi3sk: 'workItem|open|654321',
+    pk: '654321',
     sk: 'workItem|open',
   },
 ];
